@@ -1,0 +1,29 @@
+{
+  "name": "using_highlandjs",
+  "version": "1.0.0",
+  "description": "this sample uses highland js methods in typescript nodejs project ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && npm run build && node ./dist/index.js",
+    "clean": "node ./node_modules/rimraf/bin.js dist",
+    "build": "node ./node_modules/typescript/bin/tsc"
+  },
+  "keywords": [
+    "typescript",
+    "microservices",
+    "nodejs",
+    "reactive",
+    "extensions"
+  ],
+  "author": "parth ghiya",
+  "license": "ISC",
+  "dependencies": {
+    "highland": "^2.11.1",
+    "typescript": "^2.6.2",
+    "rimraf": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.58",
+    "@types/highland": "^2.10.6"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "http2-example-typescript",
+  "version": "1.0.0",
+  "description": "this example demonstrates how to use http 2 protocol",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && npm run build && node ./dist/index.js",
+    "clean": "node ./node_modules/rimraf/bin.js dist",
+    "build": "node ./node_modules/typescript/bin/tsc"
+  },
+  "keywords": [
+    "http2",
+    "typescript",
+    "microservices"
+  ],
+  "author": "parth ghiya",
+  "license": "ISC",
+  "dependencies": {
+    "@types/spdy": "^3.4.4",
+    "body-parser": "^1.18.2",
+    "config": "^1.30.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.4",
+    "debug": "^3.1.0",
+    "express": "^4.16.3",
+    "express-ping": "^1.4.0",
+    "helmet": "^3.12.0",
+    "lodash": "^4.17.10",
+    "reflect-metadata": "^0.1.12",
+    "rimraf": "^2.6.2",
+    "routing-controllers": "^0.7.7",
+    "spdy": "^3.4.7",
+    "typedi": "^0.7.2",
+    "winston": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "typescript": "^2.8.3",
+    "@types/config": "0.0.34",
+    "@types/cors": "^2.8.4",
+    "@types/debug": "0.0.30",
+    "@types/express": "^4.11.1",
+    "@types/helmet": "0.0.37",
+    "@types/node": "^10.0.4",
+    "@types/winston": "^2.3.9"
+  }
+}

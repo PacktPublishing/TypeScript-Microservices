@@ -1,0 +1,13 @@
+{
+  "name": "nodestreams",
+  "version": "1.0.0",
+  "description": "this is project for custom transform stream implementation",
+  "scripts": {
+    "start":"tsc && node .\\dist\\stream_test.js"
+  },
+  "author": "parth ghiya",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.0.58"
+  }
+}

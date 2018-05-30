@@ -1,0 +1,24 @@
+{
+  "name": "ts-http-proxy",
+  "version": "1.0.0",
+  "description": "this is http proxy ",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run clean && npm run build && node ./dist/index.js",
+    "clean": "node ./node_modules/rimraf/bin.js dist",
+    "build": "node ./node_modules/typescript/bin/tsc"
+  },
+  "keywords": [
+    "tsms",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "parth ghiya",
+  "license": "ISC",
+  "dependencies": {
+    "@types/http-proxy": "^1.16.1",
+    "http-proxy": "^1.17.0",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.8.3"
+  }
+}

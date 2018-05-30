@@ -1,0 +1,14 @@
+{
+  "name": "handing-asynchronous-nature",
+  "version": "1.0.0",
+  "description": "handling aysnchronous nature",
+  "scripts": {},
+  "author": "parth ghiya",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^8.5.1"
+  },
+  "dependencies": {
+    "axios": "^0.17.1"
+  }
+}

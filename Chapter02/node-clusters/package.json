@@ -1,0 +1,22 @@
+{
+  "name": "clusters",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "^3.1.0",
+    "express": "^4.16.2",
+    "typescript": "^2.6.2"
+  },
+  "devDependencies": {
+    "@types/debug": "0.0.30",
+    "@types/node": "^8.0.58",
+    "@types/body-parser": "^1.16.8",
+    "@types/express": "^4.0.39"
+  },
+  "scripts": {},
+  "author": "parth ghiya",
+  "license": "ISC"
+}

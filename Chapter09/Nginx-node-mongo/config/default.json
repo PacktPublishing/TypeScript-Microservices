@@ -1,0 +1,11 @@
+{
+    "express":{
+        "port":8081,
+        "debug":5858,
+        "host":"products-service"
+    },
+    "mongo":{
+        "urlClient": "mongodb://chapter9-mongo/products"
+    },
+        "loglevel": "info"
+}

@@ -1,0 +1,27 @@
+version: "2"
+services:
+  chapter9-app:
+     container_name: chapter9-app
+     build: ./ 
+     restart: always
+     links:
+      - chapter9-mongo
+  chapter9-mongo:
+    container_name: chapter9-mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
+  nginx:
+    restart: always
+    build: ./nginx/
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /etc/nginx/ssl:/etc/nginx/ssl
+    volumes_from:
+      - chapter9-app
+    links:
+      - chapter9-app:chapter9-app     

@@ -1,0 +1,21 @@
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: "Hello World API"
+paths:
+  /hello/{product}:
+    get:
+      description: Returns a description for the product!
+      parameters:
+        - name: product
+          in: path
+          type: string
+          required: true
+          description: The name of the product to greet.
+      responses:
+        200:
+          description: Returns the greeting.
+          schema:
+            type: string
+        400:
+          description: Invalid characters in "product" were provided.

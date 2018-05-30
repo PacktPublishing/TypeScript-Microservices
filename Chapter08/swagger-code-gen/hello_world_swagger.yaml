@@ -1,0 +1,57 @@
+swagger: "2.0"
+host: "localhost:8080"
+info:
+  version: "1.0"
+  title: "Hello World API"
+basePath: /
+schemes:
+   - http
+   - https
+consumes:
+- application/json
+produces:
+- application/json 
+paths:
+  /hello/{product}:
+    x-swagger-router-controller: get_product
+    get:
+      description: Returns a description for the product!
+      operationId: getProductDescription
+      parameters:
+        - name: product
+          in: path
+          type: string
+          required: true
+          description: The name of the product to give info.
+      responses:
+        200:
+          description: Returns the greeting.
+          schema:
+            type: string
+        400:
+          description: Invalid characters in "product" were provided.
+  /update-product:
+    put:
+      description: Returns updated product
+      consumes:
+        - application/x-www-form-urlencoded
+      operationId: updateProduct
+      parameters: 
+        - name: productId
+          in: formData
+          type: string
+          required: true
+          description: The name of the product to give info.
+        - name: type
+          in: path
+          type: string
+          required: true
+          description: brand name.  
+      responses:
+        200:
+          description: Returns the updated product.
+          schema:
+            type: string
+        400:
+          description: Update failed.    
+        

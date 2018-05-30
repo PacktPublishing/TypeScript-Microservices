@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "moduleResolution": "node",
+      "module": "commonjs",
+      "declaration": false,
+      "noLib": false,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "sourceMap": true,
+      "pretty": true,
+      "allowUnreachableCode": true,
+      "allowUnusedLabels": true,
+      "noImplicitAny": true,
+      "noImplicitReturns": false,
+      "noImplicitUseStrict": false,
+      "outDir": "dist/",
+      "listFiles": false,
+     "noEmitHelpers": false
+   /*
+   We do not want to generate custom helper functions like __awaiter while doing async await, hence we made it noEmitHelpers false
+   */ 
+    },
+    "include": [
+      "src/**/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "compileOnSave": true
+  }
+  

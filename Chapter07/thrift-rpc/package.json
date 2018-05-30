@@ -1,0 +1,38 @@
+{
+  "name": "thrift-rpc",
+  "version": "1.0.0",
+  "description": "this is thrift demo for book typescript microservices",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "precodegen": "rimraf src/codegen",
+    "codegen": "npm run precodegen && thrift-typescript --target thrift-server --sourceDir thrift --outDir src/codegen",
+    "prebuild": "npm run clean && npm run codegen",
+    "build": "npm run codegen && tsc",
+    "start": "npm run clean && npm run precodegen && npm run build && node ./dist/index.js"
+  },
+  "keywords": [
+    "thrift",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "parth ghiya",
+  "license": "ISC",
+  "dependencies": {
+    "@creditkarma/dynamic-config": "^0.6.7",
+    "@creditkarma/thrift-client": "^0.6.12",
+    "@creditkarma/thrift-server-core": "^0.6.12",
+    "@creditkarma/thrift-server-express": "^0.6.12",
+    "@creditkarma/thrift-typescript": "^1.1.7",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "request": "^2.85.0",
+    "rimraf": "^2.6.2",
+    "typescript": "^2.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^10.0.8",
+    "@types/request": "^2.47.0"
+  }
+}
