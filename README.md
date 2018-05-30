@@ -8,7 +8,7 @@ Typescript Microservices is an end-to-end guide that shows you the implementatio
 By the end of the book, you will be able to build production-ready, scalable, and maintainable microservices using Node.js and Typescript.
 
 ## Instructions and Navigation
-All of the code is organized into folders. All chapters have code files except for Chapter 1. Each folder starts with a number followed by the application name. For example, Chapter02.
+All of the code is organized into folders. All chapters have code files except for Chapter 1. The code bundle also include the source code for an example developed across the book. Each folder starts with a number followed by the application name. For example, Chapter02.
 
 
 
