@@ -37,3 +37,7 @@ setting up a few paid setups.
 * [Learning TypeScript 2.x - Second Edition](https://www.packtpub.com/application-development/learning-typescript-2x-second-edition?utm_source=github&utm_medium=repository&utm_campaign=9781788391474)
 
 * [Hands-On Docker for Microservices [Video]](https://www.packtpub.com/application-development/hands-docker-microservices-video?utm_source=github&utm_medium=repository&utm_campaign=9781788999960)
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781788830751">https://packt.link/free-ebook/9781788830751 </a> </p>
